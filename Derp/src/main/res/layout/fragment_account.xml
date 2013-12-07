@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_account"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/StandardText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Ticker: " />
+        <TextView
+            style="@style/StandardText"
+            android:id="@+id/ticker_last"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/StandardText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="BTC balance: " />
+        <TextView
+            style="@style/StandardText"
+            android:id="@+id/btc_balance"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/StandardText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="USD balance: " />
+        <TextView
+            style="@style/StandardText"
+            android:id="@+id/usd_balance"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/update_ticker"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Update Ticker" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Derp/Derp.iml" filepath="$PROJECT_DIR$/Derp/Derp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DerpProject.iml" filepath="$PROJECT_DIR$/DerpProject.iml" />
+    </modules>
+  </component>
+</project>
+

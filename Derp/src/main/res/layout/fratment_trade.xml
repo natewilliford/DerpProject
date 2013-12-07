@@ -1,0 +1,140 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_trade"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/StandardText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Ticker: " />
+        <TextView
+            style="@style/StandardText"
+            android:id="@+id/ticker_last"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/StandardText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Ask: " />
+        <TextView
+            style="@style/StandardText"
+            android:id="@+id/ticker_ask"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/StandardText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Bid: " />
+        <TextView
+            style="@style/StandardText"
+            android:id="@+id/ticker_bid"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/StandardText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="BTC balance: " />
+        <TextView
+            style="@style/StandardText"
+            android:id="@+id/btc_balance"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/StandardText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="USD balance: " />
+        <TextView
+            style="@style/StandardText"
+            android:id="@+id/usd_balance"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/StandardText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Commission Rate: " />
+        <TextView
+            style="@style/StandardText"
+            android:id="@+id/commission"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/sell_buy_switch"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textOff="Sell"
+        android:textOn="Buy" />
+
+    <EditText
+        android:id="@+id/trade_amount"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Amount to Trade"
+        android:inputType="numberDecimal" />
+    <EditText
+        android:id="@+id/trade_price"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Trade Price"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/StandardText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Total: " />
+        <TextView
+            style="@style/StandardText"
+            android:id="@+id/total"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/place_order"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Place Order" />
+</LinearLayout>
